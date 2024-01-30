@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="scripts/index.js" defer></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="HEADER">
+      <h1>SEBASTIAN PALOMARES CABRERA</h1>
+    </div>
+    <div class="SM">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio laborum
+        corrupti aspernatur delectus tempora, in voluptates tempore nesciunt?
+        Similique praesentium non voluptates amet alias at laborum tenetur
+        aliquid molestiae voluptatem? Lorem, ipsum dolor sit amet consectetur
+        adipisicing elit. Ratione corporis consequatur distinctio magnam
+        suscipit totam molestiae in quod sequi id atque odio dignissimos,
+        laboriosam iusto porro eligendi? Cumque, repudiandae dolorum. Aperiam
+        magnam dignissimos laboriosam delectus similique rem repellat id laborum
+        repudiandae minus vitae dolores, cupiditate fuga labore, tempore
+        molestias nobis. Eligendi accusantium dolores possimus reiciendis nisi
+        numquam, harum veritatis suscipit. Illo optio facere illum quis dolores
+        sint architecto doloremque, minus quam! Porro laborum optio quisquam
+        unde quibusdam quae ut molestiae delectus cumque enim, adipisci nisi,
+        fugiat aspernatur facilis? Suscipit, vero? Dignissimos voluptatibus ipsa
+        atque repudiandae, laudantium et minima dolor magnam fuga repellendus
+        quibusdam quam, quidem error nostrum consequatur esse cumque illo
+        deserunt sapiente labore dolorum. Exercitationem consectetur asperiores
+        excepturi molestias? Possimus alias sapiente maiores, velit reiciendis
+        libero dolore animi nesciunt fugit numquam necessitatibus enim aliquid
+        est deleniti corrupti, incidunt ex, excepturi amet atque explicabo
+        quidem eveniet officiis? Ipsam, quis dignissimos.
+      </p>
+    </div>
+    <div class="favs">
+        <h2>
+            Tecnologías Favoritas
+        </h2>
+    </div>
+    <div class="MTF">
+      <div class="tecnologia">
+        <h3>HTML</h3>
+        <img src="html-5.png" alt="html" />
+      </div>
+      <div class="tecnologia">
+        <h3>CSS</h3>
+        <img src="css-3.png" alt="" />
+      </div>
+      <div class="tecnologia">
+        <h3>Node</h3>
+        <img src="nodejs.png" alt="" />
+      </div>
+      <div class="tecnologia">
+        <h3>React</h3>
+        <img src="science.png" alt="" />
+      </div>
+      <div class="tecnologia">
+        <h3>MongoDB</h3>
+        <img src="database-storage.png" alt="" />
+      </div>
+      <div class="tecnologia">
+        <h3>AWS</h3>
+        <img src="aws.png" alt="" />
+      </div>
+    </div>
+    <div class="favs">
+        <h2>
+            Actividades Favoritas
+        </h2>
+    </div>
+    <div class="MAF">
+      <form id="formulario">
+        <label for="nombre">Titulo</label>
+        <input type="text" id="nombre" required />
+
+        <label for="descripcion">Descripción:</label>
+        <input type="text" id="descripcion" required />
+
+        <label for="imagen">URL de la imagen:</label>
+        <input type="text" id="imagen" />
+
+        <button type="button" onclick="agregarTarjeta()">
+          Agregar Tarjeta
+        </button>
+      </form>
+    </div>
+    <div id="tarjetas"></div>
+  </body>
+</html>

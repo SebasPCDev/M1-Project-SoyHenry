@@ -1,0 +1,168 @@
+.fjalla-one-regular {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.HEADER {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.HEADER h1 {
+  margin: 0;
+  font-size: 40px;
+}
+
+.SM {
+  margin: 50px auto;
+  max-width: 900px;
+  font-size: 18px;
+}
+
+.favs {
+  text-align: center;
+  font-size: 30px;
+  text-shadow: 1px 1px 2px goldenrod;
+  margin: 0px 0px 20px;
+}
+
+.MTF {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin: 0px auto;
+  padding: 0px 0px 0px;
+  max-width: 900px;
+}
+
+.MTF .tecnologia {
+  flex: 1;
+  margin: 40px 100px 40px;
+}
+
+.MTF .tecnologia h3{
+    font-size: 20px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.tecnologia:nth-child(-n + 3) {
+  order: -1;
+}
+
+.MTF .tecnologia img {
+  height: 100px;
+  width: auto;
+  margin: 20px 0px 0px;
+  transition: transform 0.5s ease;
+  align-content: center;
+}
+
+.MTF .tecnologia img:hover {
+  transform: scale(1.1);
+}
+
+.MAF {
+  display: flex;
+  justify-content: left;
+  margin: 0px auto;
+  max-width: 900px;
+}
+
+.MAF #formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0px 0px 100px;
+  padding: 0px 0px 0px;
+  width: 100%;
+}
+
+.MAF label {
+  margin: 0px 0px 10px;
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px grey;
+  
+}
+
+.MAF input {
+  margin: 0px 0px 10px;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.MAF #formulario button {
+  padding: 10px 15px;
+  background-color: grey;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  text-shadow: 1px 1px 2px black;
+  width: 20%;
+  font-family: "Fjalla One", sans-serif;
+}
+
+.MAF #formulario button:hover {
+  background-color: #45a049;
+}
+
+#tarjetas {
+  
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px auto;
+  justify-content: center;
+  text-align: center;
+  max-width: 900px;
+  margin-bottom: 100px;
+  
+}
+
+#tarjetas .tarjeta{
+    transition: transform 1s ease;
+}
+
+#tarjetas .tarjeta img {
+  height: 150px;
+  width: auto;
+  margin: 0px 20px 30px;
+  
+}
+
+#tarjetas .tarjeta h3{
+    font-size: 25px;
+    margin: 0px 0px 10px;
+    
+}
+
+#tarjetas .tarjeta p{
+    font-size: 15px;
+    margin: 0px 0px 10px;
+}
+
+#tarjetas .tarjeta:hover{
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 900px) {
+  .MTF .tecnologia {
+    flex: 1;
+    margin: 40px 60px 40px;
+  }
+}
