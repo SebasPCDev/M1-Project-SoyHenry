@@ -14,6 +14,11 @@ body {
   color: #fff;
   padding: 20px;
   text-align: center;
+  position: fixed;
+  width: 100%;
+  margin: 0px 0px 0px;
+  top: 0;
+  z-index: 1000;
 }
 
 .HEADER h1 {
@@ -22,9 +27,9 @@ body {
 }
 
 .SM {
-  margin: 50px auto;
+  margin: 130px auto 50px;
   max-width: 900px;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .favs {
@@ -49,9 +54,9 @@ body {
   margin: 40px 100px 40px;
 }
 
-.MTF .tecnologia h3{
-    font-size: 20px;
-    text-shadow: 1px 1px 2px black;
+.MTF .tecnologia h3 {
+  font-size: 20px;
+  text-shadow: 1px 1px 2px black;
 }
 
 .tecnologia:nth-child(-n + 3) {
@@ -93,16 +98,21 @@ body {
   margin-bottom: 8px;
   font-weight: bold;
   text-shadow: 1px 1px 2px grey;
-  
 }
 
 .MAF input {
-  margin: 0px 0px 10px;
+  margin: 0px 0px 0px;
   width: 100%;
   padding: 8px;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   box-sizing: border-box;
   border-radius: 10px;
+}
+
+.MAF .error {
+  margin: 0px 0px 15px;
+  font-size: 12px;
+  padding-left: 10px;
 }
 
 .MAF #formulario button {
@@ -123,7 +133,6 @@ body {
 }
 
 #tarjetas {
-  
   display: flex;
   flex-wrap: wrap;
   margin: 0px auto;
@@ -131,33 +140,36 @@ body {
   text-align: center;
   max-width: 900px;
   margin-bottom: 100px;
-  
 }
 
-#tarjetas .tarjeta{
-    transition: transform 1s ease;
+#tarjetas .tarjeta .container-image img {
+  height: 150px;
+  width: 250px;
+  margin: 0px 20px 30px;
+  object-fit: contain;
+}
+
+#tarjetas .tarjeta {
+  transition: transform 1s ease;
 }
 
 #tarjetas .tarjeta img {
-  height: 150px;
-  width: auto;
-  margin: 0px 20px 30px;
-  
+  height: auto;
+  width: 100%;
 }
 
-#tarjetas .tarjeta h3{
-    font-size: 25px;
-    margin: 0px 0px 10px;
-    
+#tarjetas .tarjeta h3 {
+  font-size: 25px;
+  margin: 0px 0px 10px;
 }
 
-#tarjetas .tarjeta p{
-    font-size: 15px;
-    margin: 0px 0px 10px;
+#tarjetas .tarjeta p {
+  font-size: 15px;
+  margin: 0px 0px 10px;
 }
 
-#tarjetas .tarjeta:hover{
-    transform: scale(1.1);
+#tarjetas .tarjeta:hover {
+  transform: scale(1.1);
 }
 
 @media only screen and (max-width: 900px) {

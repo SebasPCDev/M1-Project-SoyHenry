@@ -21,79 +21,82 @@
     </div>
     <div class="SM">
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio laborum
-        corrupti aspernatur delectus tempora, in voluptates tempore nesciunt?
-        Similique praesentium non voluptates amet alias at laborum tenetur
-        aliquid molestiae voluptatem? Lorem, ipsum dolor sit amet consectetur
-        adipisicing elit. Ratione corporis consequatur distinctio magnam
-        suscipit totam molestiae in quod sequi id atque odio dignissimos,
-        laboriosam iusto porro eligendi? Cumque, repudiandae dolorum. Aperiam
-        magnam dignissimos laboriosam delectus similique rem repellat id laborum
-        repudiandae minus vitae dolores, cupiditate fuga labore, tempore
-        molestias nobis. Eligendi accusantium dolores possimus reiciendis nisi
-        numquam, harum veritatis suscipit. Illo optio facere illum quis dolores
-        sint architecto doloremque, minus quam! Porro laborum optio quisquam
-        unde quibusdam quae ut molestiae delectus cumque enim, adipisci nisi,
-        fugiat aspernatur facilis? Suscipit, vero? Dignissimos voluptatibus ipsa
-        atque repudiandae, laudantium et minima dolor magnam fuga repellendus
-        quibusdam quam, quidem error nostrum consequatur esse cumque illo
-        deserunt sapiente labore dolorum. Exercitationem consectetur asperiores
-        excepturi molestias? Possimus alias sapiente maiores, velit reiciendis
-        libero dolore animi nesciunt fugit numquam necessitatibus enim aliquid
-        est deleniti corrupti, incidunt ex, excepturi amet atque explicabo
-        quidem eveniet officiis? Ipsam, quis dignissimos.
+        ¡Hola! Te doy la bienvenida a mi primer proyecto del curso de
+        desarrollador Full Stack en la academia de Henry. Si estás leyendo esto,
+        seguramente tengas curiosidad sobre el cómo fue posible llevar a cabo el
+        desarrollo de este portafolio. Te lo cuento…
       </p>
+      <p>
+        El desarrollo de esta página web se realizó utilizando principalmente
+        las tecnologías de HTML, CSS y JavaScript. Integrando conocimientos de
+        maquetado por etiquetas para el esqueleto del proyecto, unos cuantos
+        estilos para la mejora del aspecto visual y claramente conceptos de
+        JavaScript como ECMAScript y DOM; nace la posibilidad de llevar a un
+        siguiente nivel la programación. Pido disculpas por el diseño de la
+        página, puede resultar un poco básico… de todas formas, para gustos los
+        colores, y preferí algo mínimamente invasivo para la vista del usuario.
+      </p>
+      <p>
+        El reto estrella de este proyecto fue implementar un sistema de
+        formulario, en donde el usuario fuese capaz de agregar actividades
+        favoritas, incluyendo una breve descripción e imagen representativa de
+        la misma. Agradezco al profe Felipe por su impecable metodología de
+        enseñanza. A veces es entendible que manejar un grupo de 100 personas
+        puede ser complicado.
+      </p>
+      <p>
+        Disfruta de la funcionalidad de la página y agradezco cualquier feedback
+        sobre posibles mejoras.
+      </p>
+      <p>Nota: Si encuentras algún bug, me avisas 😊 Estamos para aprender.</p>
     </div>
     <div class="favs">
-        <h2>
-            Tecnologías Favoritas
-        </h2>
+      <h2>Tecnologías Favoritas</h2>
     </div>
     <div class="MTF">
       <div class="tecnologia">
         <h3>HTML</h3>
-        <img src="html-5.png" alt="html" />
+        <img src="/M1-Project-FS/assets/html-5.png" alt="html" />
       </div>
       <div class="tecnologia">
         <h3>CSS</h3>
-        <img src="css-3.png" alt="" />
+        <img src="assets/css-3.png" alt="" />
       </div>
       <div class="tecnologia">
         <h3>Node</h3>
-        <img src="nodejs.png" alt="" />
+        <img src="assets/nodejs.png" alt="" />
       </div>
       <div class="tecnologia">
         <h3>React</h3>
-        <img src="science.png" alt="" />
+        <img src="assets/science.png" alt="" />
       </div>
       <div class="tecnologia">
         <h3>MongoDB</h3>
-        <img src="database-storage.png" alt="" />
+        <img src="assets/database-storage.png" alt="" />
       </div>
       <div class="tecnologia">
         <h3>AWS</h3>
-        <img src="aws.png" alt="" />
+        <img src="assets/aws.png" alt="" />
       </div>
     </div>
     <div class="favs">
-        <h2>
-            Actividades Favoritas
-        </h2>
+      <h2>Actividades Favoritas</h2>
     </div>
     <div class="MAF">
       <form id="formulario">
         <label for="nombre">Titulo</label>
         <input type="text" id="nombre" required />
+        <span class="error" id="errornombre"></span>
 
         <label for="descripcion">Descripción:</label>
         <input type="text" id="descripcion" required />
+        <span class="error" id="errordescripcion"></span>
 
         <label for="imagen">URL de la imagen:</label>
         <input type="text" id="imagen" />
+        <span class="error" id="errorimg"></span>
 
-        <button type="button" onclick="agregarTarjeta()">
-          Agregar Tarjeta
-        </button>
+        <button type="button" onclick="handler()">Agregar Tarjeta</button>
       </form>
     </div>
     <div id="tarjetas"></div>
