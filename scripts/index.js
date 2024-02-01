@@ -39,7 +39,10 @@ function addCard(obj) {
     img.src = imgUrl;
     deleteImg.src = "assets/bin.png"
     deleteImg.className = "delete-img"
-    deleteImg.id = id
+
+    deleteImg.addEventListener("click", function () {
+        deleteImgById(id)
+    })
 
 
     h3.innerHTML = title;
@@ -58,7 +61,7 @@ function addCard(obj) {
     newCard.className = "tarjeta"
     newCard.id = id;
 
-
+    //console.log(newCard)
     return newCard;
 }
 //Declaración de la función que convierte la tarjeta en HTML
@@ -78,18 +81,18 @@ function convert() {
 
 }
 //funcion para eliminar tarjetas
-function deleteImg(id) {
+function deleteImgById(id) {
 
-
-    let activityToDelete = NewRepo.getAllActivities();
-    console.log("estoy en delete")
+    let activityToDelete = document.getElementById(id);
+    NewRepo.deleteActivity(parseInt(activityToDelete.id))
+    convert();
 }
 
 //Declaración de la función manejadora al evento del botón.
 function handler() {
 
     listaActividades = NewRepo.getAllActivities();
-    console.log(listaActividades)
+    //console.log(listaActividades)
 
     //extraer lo valores de los inputs
     let nombre = document.getElementById('nombre').value;
@@ -132,10 +135,11 @@ form.addEventListener("submit", function (e) {
 })
 
 
-/* clickDelete.addEventListener("clic", function () {
-    console.log("hice click")
 
-}) */
+
+
+
+
 
 
 
