@@ -31,7 +31,7 @@ const NewRepo = new Repository();
 //Declaración de la función que agrega una tarjeta
 function addCard(obj) {
 
-    const { title, description, imgUrl } = obj // Declaración de variables por destructuting
+    const { id, title, description, imgUrl } = obj // Declaración de variables por destructuting
     const h3 = document.createElement('h3')
     const p = document.createElement('p')
     const img = document.createElement('img')
@@ -39,6 +39,7 @@ function addCard(obj) {
     img.src = imgUrl;
     deleteImg.src = "assets/bin.png"
     deleteImg.className = "delete-img"
+    deleteImg.id = id
 
 
     h3.innerHTML = title;
@@ -48,12 +49,14 @@ function addCard(obj) {
     let divImgContainer = document.createElement('div')
     divImgContainer.className = "container-image"
 
+
     newCard.appendChild(h3);
     newCard.appendChild(p);
     newCard.appendChild(divImgContainer);
     divImgContainer.appendChild(img)
     divImgContainer.appendChild(deleteImg)
     newCard.className = "tarjeta"
+    newCard.id = id;
 
 
     return newCard;
@@ -74,7 +77,7 @@ function convert() {
     })
 
 }
-
+//funcion para eliminar tarjetas
 function deleteImg(id) {
 
 
@@ -86,6 +89,7 @@ function deleteImg(id) {
 function handler() {
 
     listaActividades = NewRepo.getAllActivities();
+    console.log(listaActividades)
 
     //extraer lo valores de los inputs
     let nombre = document.getElementById('nombre').value;
@@ -114,10 +118,25 @@ function handler() {
     NewRepo.createActivity({ id: Date.now(), title: nombre, description: descripcion, imgUrl: imagen });
     convert();
 
+    //capturo el input delete
+
+
 
     document.getElementById('formulario').reset();
     //reinicio del formulario
 }
+
+const form = document.getElementById("formulario")
+form.addEventListener("submit", function (e) {
+    e.preventDefault()
+})
+
+
+/* clickDelete.addEventListener("clic", function () {
+    console.log("hice click")
+
+}) */
+
 
 
 
