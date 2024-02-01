@@ -32,6 +32,10 @@ body {
   font-size: 20px;
 }
 
+.SM p {
+  margin: 0px 0px 20px;
+}
+
 .favs {
   text-align: center;
   font-size: 30px;
@@ -87,7 +91,7 @@ body {
   flex-direction: column;
   justify-content: center;
   max-width: 900px;
-  margin: 0px 0px 100px;
+  margin: 0px 0px 50px;
   padding: 0px 0px 0px;
   width: 100%;
 }
@@ -143,24 +147,28 @@ body {
 }
 
 #tarjetas .tarjeta .container-image img {
-  height: 150px;
-  width: 250px;
-  margin: 0px 20px 30px;
+  height: 100px;
+  width: 200px;
+  margin: 0px 10px 30px;
   object-fit: contain;
+  display: block;
 }
 
 #tarjetas .tarjeta {
   transition: transform 1s ease;
+  border: 1px solid black;
+  border-radius: 50px;
+  box-shadow: 4px 5px 1px black;
+  margin: 0px 15px 15px;
 }
 
-#tarjetas .tarjeta img {
-  height: auto;
-  width: 100%;
+#tarjetas .tarjeta .container-image {
+  position: relative;
 }
 
 #tarjetas .tarjeta h3 {
   font-size: 25px;
-  margin: 0px 0px 10px;
+  margin: 30px 0px 10px;
 }
 
 #tarjetas .tarjeta p {
@@ -170,6 +178,16 @@ body {
 
 #tarjetas .tarjeta:hover {
   transform: scale(1.1);
+}
+
+#tarjetas .tarjeta .container-image .delete-img {
+  height: 50px;
+  width: auto;
+  margin: 0px 0px 0px;
+  position: absolute;
+  cursor: pointer;
+  top: 92px;
+  left: 182px;
 }
 
 @media only screen and (max-width: 900px) {
