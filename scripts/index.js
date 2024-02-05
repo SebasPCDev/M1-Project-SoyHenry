@@ -129,11 +129,12 @@ function handler() {
     //reinicio del formulario
 }
 
-const form = document.getElementById("formulario")
+/* const form = document.getElementById("formulario")
 form.addEventListener("submit", function (e) {
     e.preventDefault()
-})
+}) */
 
+module.exports = {Activity, Repository}
 
 
 
